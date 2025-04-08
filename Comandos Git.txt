@@ -1,0 +1,20 @@
+1. Git init: se usa para inicializar un nuevo repositorio de Git en mi proyecto. Es como decirle a Git que quiero llevar un control de versiones en esa carpeta.
+
+2. Git add: se usa para preparar archivos para hacer un commit al historial de repositorios. Mueve los cambios que hiciste al area de preparación, como una zona
+de espera antes de hacer un git commit. Es como decirle a git que los cambios que estoy haciendo me interesan y que los incluya en el proximo commit.
+
+git add nombre_archivo : agrega el archivo en específico.
+git add .: agrega todos los archivos y carpetas a la espera en el directorio actual.
+git add -A: agrega todos los cambios (incluyendo los archivos eliminados).
+
+3. Git commit: se usa para guardar un punto en el historial del proyecto, guardando los cambios que has preparado en el git add. Es como decir que estoy listo para guardar
+los cambios que he ido haciendo.
+Resumen:
+git add: selecciono los cambios que quiero guardar.
+git commit: guarda los cambios con un mensaje.
+Un commit contiene:
+-Los cambios realizados.
+-El autor y la fecha del commit.
+-Un mensaje descriptivo.
+-Un identificador único (hash).
+

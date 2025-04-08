@@ -1,0 +1,9 @@
+Configuración Git: para usar git lo primero es usar el comando git config --global user.name "Pablo" y user.email "pablo7me2000@gmail.com. Con esto ponemos en el archivo de
+configuración de git el nombre de usuario y el email para poder hacer usar todos los comandos de git.
+
+Ramas en git: es una línea del tiempo alternativa del proyecto, donde haces cambios sin afectar a la rama principal. La rama principal se suele llamar main o master.
+Las ramas sirven para:
+-Desarrollar nuevas funcionalidades sin romper código que ya funciona.
+-Probar ideas o experimentos.
+-Colaborar en equipo sin pisar el trabajo de otros.
+-Corregir errores sin alterar el trabajo en curso.
