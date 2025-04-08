@@ -70,5 +70,29 @@ Ejemplo: git reset --hard HEAD~1.
 -Borra el commit más reciente.
 -Borra los cambios en el disco.
 
-11. Git reflog: Cuando has hecho un git reset --hard  y quieres deshacerlo.
+11. Git reflog: Cuando has hecho un git reset --hard  y quieres deshacerlo o para ver el historial de las referencias en tu repositorio.
+Git reflog guarda todos los movimientos de tu puntero HEAD, todo lo que se hace en el repositorio.
+¿cuando es útil?
+-Para recuperar commits perdidos después de un reset, rebase o checkout erróneo.
+-Ver el historial completo de HEAD, incluyendo acciones locales.
+-Restaurar ramas o commits eliminados accidentalmente.
+
+12. Git tag: se usa para crear etiquetas o marcas en puntos específicos del historial de tu repositorio, generalmente para señalar versiones importantes o hitos del proyecto.
+Uso:
+-Marcar un commit específico.
+-Crear versiones de software.
+-Tener referencias fáciles a puntos claves del historial del proyecto.
+
+13. Git branch: comando fundamental para trabajar con ramas en git y clave para gestionar el desarrollo en paralelo, características, correciones y versiones del código.
+Uso:
+-Crear nuevas ramas para desarrollar nuevas características o hacer cambios sin afectar al código principal.
+-Ver ramas existentes en el repositorio.
+-Eliminar ramas innecesarias.
+-Cambiar de una rama a otra.
+Ejemplos:
+-Ver ramas existentes: git branch.
+-Crear nueva rama: git branch nombre_rama.
+-Cambiar rama: git checkout nombre_rama. Forma moderna (git switch nombre_rama).
+-Crear nueva rama y cambiar a ella: git checkout -b nombre_rama. Forma moderna(git switch -c nombre_rama)
+
 

@@ -43,3 +43,11 @@ Uso:
 -Commit.
 -Archivos en preparación.
 -Y cambios no guardados en tus archivos locales.
+
+Git reflog:
+importante: Git reflog te da una oportunidad para recuperar algo pero no es infalible. Los registros del reflog se pueden perder después de haber pasado un tiempo asi que 
+si hay que usar git reflog usarlo cuanto antes.
+
+Git tag: por defecto las etiquetas no se suben automaticamente a un repositorio remoto al hacer un git push. Hay que enviarlas:
+-git push origin v1.0.
+-git push --tags.
