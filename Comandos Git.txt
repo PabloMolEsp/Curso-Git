@@ -18,3 +18,47 @@ Un commit contiene:
 -Un mensaje descriptivo.
 -Un identificador único (hash).
 
+4. Git log: sirve para ver el historial de commit de un repositorio de Git.
+Muestra una lista de todos los commit que se han hecho, con detalles como:
+-Hash (id único) del commit.
+-Autor del commit.
+-Fecha del commit.
+-Mensaje del commit.
+
+5. Git status: muestra el estado actual del repositorio. Como una fotografía del momento, te dice que archivos han cambiado, cuales estan listos para commit y cuales no.
+Cuando utilizas git status, puedes ver:
+-Archivos que ya agregaste con git add (listos para commit)
+-Archivos que has cambiado pero aún no has agregado.
+-Archivos nuevos no rastreados por Git todavía.
+-Si estas en medio de una fusión (merge) también te lo dice.
+
+6. Git checkout: sirve para cambiar de rama o restaurar archivos o commits anteriores.
+Uso más comunes:
+-Cambiar de rama: git checkout nombre-de-la-rama.
+-Crear y cambiar una nueva rama: (version recomendada git switch -c).
+-Restaurar archivos en su estado anterior (antes del último commit).
+Se recomienda usar
+-git switch para cambiar de rama.
+-git restore para restaurar archivos.
+
+7. Git reset: es un comando poderoso y delicado. Sirve para deshacer cambios en distintos niveles, dependiendo de como se use.
+Para que se usa git reset:
+-Para deshcer commit.
+-Sacar archivos del área de preparación.
+-Mover el puntero de la rama actual a otro commit.
+
+8. Git alias:
+-Se usa para crear comandos cortos y fáciles de recordar.
+-Acelerar tu flujo de trabajo.
+-Ahorrar tiempo.
+Ejemplo:
+-git config --global alias.st status. Creamos el alias
+-git st. Ahora para usar el comando git status usamos git st.
+-git status.
+Estos alias se guardan en el archivo de configuración .gitconfig.
+
+9. Git diff:
+-Líneas que han cambiado desde el último commit. Ejemplo: git diff
+-Diferencia entre ramas, commits o versiones. Ejemplo: git diff rama1 rama2. git diff commit1 commit2 
+-Cambios que has hecho pero no has agregado con git add. Ejemplo: git diff nombre_archivo
+-Que esta en área de preparación comparado con el último commit. Ejemplo: git diff --staged

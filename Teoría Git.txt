@@ -7,3 +7,32 @@ Las ramas sirven para:
 -Probar ideas o experimentos.
 -Colaborar en equipo sin pisar el trabajo de otros.
 -Corregir errores sin alterar el trabajo en curso.
+
+Git log
+Opciones útiles:
+-git log --oneline: muestra los commit de forma resumida.
+-git log --graph: muestra un gráfico de las ramas y fusiones.
+-git log -p: muestra los cambios linea por linea.
+-git log nombre_archivo: muestra los commit que afectaron al archivo en específico.
+
+Git status
+Cuando se usa:
+-Antes de hacer un git add o git commit, para ver que cambio.
+-Para no olvidar ningún archivo importante.
+-Para revisar si estas en la rama correcta.
+-Para ver si hay conflictos durante un merge.
+
+Git reset
+Ejemplos
+-git reset --soft HEAD~1: deshace el último commit pero conserva los cambios.
+-git reset HEAD~1: deshace el último commit y saca los archivos del área de preparación (mantiene los cambios en el disco).
+-git reset --hard HEAD~1: elimina todo commit y cambios del disco. (sin recuperación).
+-git reset nombre_archivo: quita archivos del área de preparación (como si nunca hubieras hecho git)
+
+IMPORTANTE: git reset --hard: elimina los cambios sin pasar por la papelera. Usar si se esta 100% seguro.
+
+Git diff
+Uso:
+-Revisa tu código antes de hacer un commit.
+-Ver exactamente que has cambiado en un archivo.
+-Comparar ramas o resolver conflictos.
