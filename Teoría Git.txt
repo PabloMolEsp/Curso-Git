@@ -36,3 +36,10 @@ Uso:
 -Revisa tu código antes de hacer un commit.
 -Ver exactamente que has cambiado en un archivo.
 -Comparar ramas o resolver conflictos.
+
+Git reset --hard:
+Uso:
+-Para volver al repositorio a un estado anterior y eliminar todos los cambios hechos desde ese punto. Incluyendo:
+-Commit.
+-Archivos en preparación.
+-Y cambios no guardados en tus archivos locales.

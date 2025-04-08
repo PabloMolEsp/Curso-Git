@@ -62,3 +62,13 @@ Estos alias se guardan en el archivo de configuración .gitconfig.
 -Diferencia entre ramas, commits o versiones. Ejemplo: git diff rama1 rama2. git diff commit1 commit2 
 -Cambios que has hecho pero no has agregado con git add. Ejemplo: git diff nombre_archivo
 -Que esta en área de preparación comparado con el último commit. Ejemplo: git diff --staged
+
+10. Git reset --hard: poderoso pero destructivo hay que tener cuidado al usarlo.
+Resumen: revierte todo y lo limpia como si no se hubiera hecho nada.
+Ejemplo: git reset --hard HEAD~1.
+-Mueve el puntero a un commit anterior.
+-Borra el commit más reciente.
+-Borra los cambios en el disco.
+
+11. Git reflog: Cuando has hecho un git reset --hard  y quieres deshacerlo.
+
