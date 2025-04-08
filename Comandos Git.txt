@@ -103,4 +103,6 @@ Cambiar a una rama existente: git switch nombre_rama.
 Crear una nueva rama y cambiar a ella al momento: git switch -c nombre_rama.
 Cambiar a una rama previamente usada: git switch -.
 
+15. Git merge: 
+
 
