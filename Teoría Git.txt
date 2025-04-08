@@ -51,3 +51,8 @@ si hay que usar git reflog usarlo cuanto antes.
 Git tag: por defecto las etiquetas no se suben automaticamente a un repositorio remoto al hacer un git push. Hay que enviarlas:
 -git push origin v1.0.
 -git push --tags.
+
+Git switch utilidad:
+-Más claro y específico.
+-Evita confusión.
+Usar solo git switch cuando solo se quiere cambiar de rama
