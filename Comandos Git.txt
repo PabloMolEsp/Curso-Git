@@ -133,3 +133,5 @@ Comandos útiles:
 -git stash show -p nombre_stash: ver el contenido de un stash.
 -git stash drop nombre_stash: eliminas un stash en específico.
 -git stash clear: borras todos los stash.   
+
+Cambio para ver como funciona GitHub
