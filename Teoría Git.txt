@@ -55,4 +55,9 @@ Git tag: por defecto las etiquetas no se suben automaticamente a un repositorio 
 Git switch utilidad:
 -Más claro y específico.
 -Evita confusión.
-Usar solo git switch cuando solo se quiere cambiar de rama
+Usar solo git switch cuando solo se quiere cambiar de rama.
+
+Git merge:
+Tipos:
+-Merge automático: Git une todo sin problemas y hace un commit de merge automaticamente.
+-Merge con conflictos: si los mismos archivos fueron modificados en ambas ramas, tienes que resolver los conflictos manualmente.

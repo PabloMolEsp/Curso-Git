@@ -103,6 +103,33 @@ Cambiar a una rama existente: git switch nombre_rama.
 Crear una nueva rama y cambiar a ella al momento: git switch -c nombre_rama.
 Cambiar a una rama previamente usada: git switch -.
 
-15. Git merge: 
+15. Git merge: sirve para combinar los cambios de una rama con otra, útil cuando trabajas con múltiples ramas y quieres poner el trabajo de una rama en otra.
+Uso:
+-Unir ramas diferentes en una sola.
+-Traer cambios de una rama a otra rama.
+-Colaborar en equipo ya que cada uno puede trabajar desde su propia rama y después juntar el trabajo.
+Ejemplo de git merge:
+1. Crear una rama para nueva funcionalidad.
+2. Hacer cambios y commits en esa nueva rama.
+3. Cambiar a la rama  principal.
+4. Hacer el merge.
+5. Borrar la rama si ya no se necesita.
 
-
+16. Git Stash: sirve para cuando estas trabjando en algo pero tienes que cambiar de rama y no has guardado los cambios, entonces ente comando guarda los cambios para que
+puedas trabajar en otra rama.
+Uso:
+-Guarda temporalmente los cambios no confirmados (sin hacer commit).
+-Dejar tu rama limpia para hacer un pull, merge, etc...
+-Recuperar los cambios que hiciste y seguir por ahi.
+Ejemplo:
+1. Trabajando en algo: git status (mostraria tienes cambios sin guardar).
+2. Necesitas cambiar a otra rama (usamos git stash).
+3. Cambias de rama y haces lo que sea.
+4. Vuelves y (utilizas git stash pop) con esto recuperas los cambios y sigues trabajando por donde lo dejaste.
+Comandos útiles:
+-git stash: guardas los cambios.
+-git stash pop: recuperar los cambios.
+-git stash list: ver stash guardados.
+-git stash show -p nombre_stash: ver el contenido de un stash.
+-git stash drop nombre_stash: eliminas un stash en específico.
+-git stash clear: borras todos los stash.   
