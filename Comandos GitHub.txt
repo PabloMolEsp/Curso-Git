@@ -1,0 +1,45 @@
+1. Git remote: sirve par gestionar las conexiones a repositorios remotos. Útil cuando trabajas con un repositorio local que necesita estar sincronizado con uno en linea.
+Usos:
+git remote -v: muestra los repositorios que estan conectados.
+git remote add origin https://github.com/usuario/repositorio.git: conecta tu repositorio local con un repositorio de GitHub
+git remote set-url origin https://github.com/usuario/repositorio.git: útil si cambiaste el nombre del repo en GitHub o moviste el proyecto.
+git remote remove origin: para desconectar el repositorio remoto del repositorio local.
+Este comando es importante porque te permite tener tu repositorio en GitHub aparte de tenerlo en local en tu propio ordenador
+
+2. Git fetch: descargar los cambios del repositorio remoto pero no los aplica automáticamente a tu rama actual.
+Ejemplo:
+git fetch origin: esto actualiza las ramas remotas pero en la rama local no tienes ningún cambio.
+Uso:
+-Ver cambios antes de aplicar.
+-Trabajar de forma más segura.
+-Comparar ramas locales y remotas.
+
+3. Git pull: descarga los cambios del remoto y los fusiona en tu rama actual.
+Ejemplo: git pull origin main: trae los últimos cambios de main en GitHub y los aplica directamente a tu rama local.
+Uso:
+-Mantener tu rama actual actualizada con el remoto.
+-Traer los cambios sin revisar primero.
+
+4. Git clone: copia un repositorio remoto de GitHub por ejemplo a tu ordenador. Como hacer una fotocopia del proyecto, incluyendo: Archivos del código, Historial de commits,
+ramas y configuración de Git.
+Ejemplo: git clone https://github.com/usuario/repositorio.git: Con esto:
+1. Se crea un carpeta con el nombre del repositorio en nuestro ordenador.
+2. Copia el contenido del repositorio.
+3. Puedes trabajar localmente con ese repositorio.
+Uso:
+-Cuando quieres empezar a trabajar con un proyecto existente en GitHub.
+-Cuando alguien te comparte un repo y tú quieres tener tu copia local.
+-Cuando quieres contribuir a proyectos open source.
+
+5. Git push: envía los cambios locales al repositorio remoto. Es decir, después de que haces cambios en tu proyecto (y haces commit), usas git push para que esos cambios
+aparezcan en GitHub.
+Ejemplo: git push origin main
+Esto significa:
+origin → el nombre del repositorio remoto (normalmente es origin).
+main → la rama a la que quieres subir los cambios.
+Uso:
+-Después de hacer commit y quieres subir tu trabajo a GitHub.
+-Para compartir tu código con otros.
+-Para tener una copia de seguridad en la nube.
+-Después de crear una nueva rama y quieres que también exista en el remoto.
+
